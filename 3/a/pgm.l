@@ -3,7 +3,8 @@
 %}
 
 id [a-zA-Z]([a-zA-Z]|[0-9])*
-num [0-9]+	
+num [0-9]+
+	
 %%
 "switch" {return SW;}
 "case" {return CS;}
@@ -17,6 +18,7 @@ num [0-9]+
 ":" {return Q;}
 "}" { return CCB;}
 ";" { return SEM; }
+"=" {return EQ;}
 %%
 
 int yywrap()
