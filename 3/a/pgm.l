@@ -19,6 +19,7 @@ num [0-9]+
 "}" { return CCB;}
 ";" { return SEM; }
 "=" {return EQ;}
+.      {return yytext[0];}
 %%
 
 int yywrap()
