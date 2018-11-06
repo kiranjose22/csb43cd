@@ -1,4 +1,3 @@
-
 // C program to calculate the First and 
 // Follow sets of a given grammar 
 #include<stdio.h> 
@@ -36,10 +35,9 @@ int main(int argc, char **argv)
     int km = 0; 
     int i, choice; 
     char c, ch; 
-    int count; 
+    count = 8; 
       
-    // The Input grammar
-/* 
+    // The Input grammar 
     strcpy(production[0], "E=TR"); 
     strcpy(production[1], "R=+TR"); 
     strcpy(production[2], "R=#"); 
@@ -47,18 +45,7 @@ int main(int argc, char **argv)
     strcpy(production[4], "Y=*FY"); 
     strcpy(production[5], "Y=#"); 
     strcpy(production[6], "F=(E)"); 
-    strcpy(production[7], "F=i");
-
-*/
-
-printf("\nNo. of productions: ");scanf("%d",&count);
-
-printf("\nEnter productions:\n");
-for(int z=0;z<count;z++)
-{
-scanf("%s",&production[z]);
-}
- 
+    strcpy(production[7], "F=i"); 
       
     int kay; 
     char done[count]; 
@@ -299,4 +286,3 @@ void followfirst(char c, int c1, int c2)
         } 
     } 
 } 
-
