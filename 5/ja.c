@@ -22,7 +22,7 @@ int getGrammar(){
 void main() { 
     int jm = 0; 
     int km = 0; 
-    int i, choice,chk; 
+    int i, choice; 
     char c, ch; 
 
     count = getGrammar();  
@@ -60,7 +60,7 @@ void main() {
           
         // print result
         for(i = 0 + jm; i < n; i++) { 
-            int lark = 0; //https://www.google.com/gmail/chk = 0;       
+            int lark = 0, chk = 0;       
             for(lark = 0; lark < point2; lark++) { 
                   
                 if (first[i] == calc_first[point1][lark]) { 
